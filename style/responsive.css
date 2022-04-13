@@ -1,0 +1,18 @@
+@media screen and (max-width:1000px) { /* qdo a tela estiver pequena até 700 px, então se aplicará estas configuraçoes */
+    header .container{
+        display: flex;
+        flex-direction: column;    
+    }
+}
+
+.botao{
+    margin-top: 5px;
+    width: 400px;
+    height: 90px;   
+}
+
+@media screen and (min-width: 1000px){
+    .sinopse { /* em tela grde a partir de 1000px, o txt ficará 50% de limite da tela */
+        width: 50%;
+    }
+}

@@ -1,0 +1,110 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* elementos não vão sair da caixa */
+}
+
+/* elementos base */
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* alinha vertical */
+    justify-content: space-between; /* horizontal */
+}
+
+header .logo{
+    margin-left: 5px; /* desgruda da parte esquerda */
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times; /* a 2ª fonte é p/ substituicao */
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA; /* cor da fonte dos links */
+    margin-right: 10px; /* distancia entre links */
+}
+
+header nav a:hover{ /* ao passar o mouse nos links, ficam + brancos */
+    color: #fff;
+}
+
+/* filme principal */
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.50) 100%), url('../img/capa.png');
+    
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .sinopse{
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+.filme-principal .titulo{
+    margin-top: 10%; /* melhor em % do q px, pois mobile */
+    font-size:  40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    
+    padding: 15px 30px; /* um valor é para 4 cantos, 2 para cima/baixo e lados */
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*  muda ponteiro para mão */
+    transition: .3s ease all;
+}
+
+.botao:hover{ /* inverte as cores ao passar mouse */
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left:  20px;
+    margin-bottom: 80px;
+}
+
+.filme-principal .container{
+    width: 70%; /*  container q está dentro do filme-principal */
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
